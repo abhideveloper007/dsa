@@ -1,1 +1,1 @@
-<h2>longest-palindrome Notes</h2><hr>[ Time taken: 6 hrs 27 m 55 s ]
+<h2>longest-palindrome Notes</h2><hr>[ Time taken: 19 hrs 41 m 30 s ]
