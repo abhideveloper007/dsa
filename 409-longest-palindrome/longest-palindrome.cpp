@@ -10,33 +10,31 @@ public:
                 lower[pos]++;
             }
             else{
-              int  posi=s[i]-'A';
-              upper[posi]++;
-
+                int pos=s[i]-'A';
+                upper[pos]++;
             }
             i++;
         }
+        int result=0;
         int odd=0;
-        int count=0;
         for(int i=0;i<26;i++){
-            // odd
             if(lower[i]%2==0){
-              count+=lower[i];
+                result+=lower[i]-0;
             }
             else{
-                count+=lower[i]-1;
+                result+=lower[i]-1;
                 odd=1;
             }
+        }
+        for(int i=0;i<26;i++){
             if(upper[i]%2==0){
-                count+=upper[i];
-
+                result+=upper[i]-0;
             }
             else{
-              count+=upper[i]-1;
-              odd=1;
+                result+=upper[i]-1;
+                odd=1;
             }
         }
-return count+odd;
-        
+        return result+odd;
     }
 };
