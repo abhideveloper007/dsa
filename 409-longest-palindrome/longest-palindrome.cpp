@@ -25,9 +25,7 @@ public:
                 result+=lower[i]-1;
                 odd=1;
             }
-        }
-        for(int i=0;i<26;i++){
-            if(upper[i]%2==0){
+             if(upper[i]%2==0){
                 result+=upper[i]-0;
             }
             else{
@@ -35,6 +33,7 @@ public:
                 odd=1;
             }
         }
+      
         return result+odd;
     }
 };
