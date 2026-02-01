@@ -5,7 +5,8 @@ class Solution {
         Arrays.sort(nums);
         int res=Integer.MAX_VALUE;
         for(int i=0;i<=n-k;i++){
-          res=Math.min((nums[i+k-1]-nums[i]),res);
+            int diff=nums[i+k-1]-nums[i];
+          res=Math.min(diff,res);
         } 
         return res;
         
